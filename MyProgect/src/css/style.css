@@ -14,6 +14,9 @@ nav{
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
 }
 
 .menu{
@@ -28,12 +31,16 @@ nav{
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
 }
 
 .main{
     width: 100%;
     height: calc(100% - 60px);
-    background-image:url("../img/парень.png") 90% 100%/auto 85% no-repeat , url("../img/фон.jpg") center/cover no-repeat;
+    background:url("../img/Парень.png") 90% 100%/auto 85% no-repeat , url("../img/фон.jpg") center/cover no-repeat;
 }
 
 .title__container{
@@ -41,6 +48,13 @@ nav{
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
 }
 
 .title__container h1{
@@ -60,10 +74,94 @@ nav{
     border: 2px solid #6d7682;
     background: none;
     border-radius: 5px;
-    color#6d7682;
+    color: #6d7682;
     font-size: 13px;
     padding: 0px 16px;
     margin: 50px 14px 0px 14px;
+}
+
+.menu li a{
+     transition: all 0.1s;
+     color: white;
+     transform: scale(1);
+     display: inline-block;
+}
+
+.menu li a:visited{
+     color: white;
+}
+
+.menu li a:hover{
+    color: #e88604;
+}
+
+.menu li a:active{
+    transform: scale(1.1);
+}
+
+.title__container input{
+     transition: all 0.2s;
+     transform: scale(1);
+}
+
+.title__container input:hover{
+    background: #344051;
+    color: white;
+}
+
+.title__container input:hover{
+    transform: scale(1.1);
+}
+
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes topshift{
+    from{
+        opacity: 0;
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+.menu li:nth-child(2){
+     animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3){
+     animation-delay: 0.8s;
+}
+
+.menu li:nth-child(4){
+     animation-delay: 1.2s;
+}
+
+.menu li:nth-child(5){
+     animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6){
+     animation-delay: 2s;
+}
+
+@keyframes titlemove{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 404px;
+    }
 }
 
 .fon{
@@ -108,6 +206,10 @@ nav{
 }
 
 .text span{
+    display: block;
+}
+
+.text span{
     text-align: left;
     font-size: 18px;
     color: #3f495a;
@@ -137,10 +239,24 @@ nav{
     background-color: #fcfdfd;
 }
 
+.text input{
+     transition: all 0.2s;
+     transform: scale(1);
+}
+
+.text input:hover{
+    background: #344051;
+    color: white;
+}
+
+.text input:hover{
+    transform: scale(1.1);
+}
+
 .fon1{
     width: 100%;
     height: calc(100% - 1791px);
-    background-image:url("../img/картинка фона.jpg") center/cover;
+    background:url("../img/картинка фона.jpg") center/cover;
     text-align: center;
 }
 
@@ -170,17 +286,19 @@ nav{
 
 .nout{
     float: right;
+    padding-right: 350px;
 }
 .nout p{
     text-align: center;
     padding-bottom: 20px;
-    padding-top: 30px;
+    padding-top: 33px;
     color: #cf7600;
     font-size: 20px;
     font-weight: 500px;
 }
 
 .nout span{
+    display: block;
     text-align: center
     padding-bottom: 20px;
     padding-top: 30px;
@@ -197,7 +315,7 @@ nav{
     text-align: center
     padding-left: 475px;
     padding-bottom: 20px;
-    padding-top: 30px;
+    padding-top: 32px;
      padding-right: 90px;
     color: #cf7600;
     font-size: 20px;
@@ -205,11 +323,12 @@ nav{
 }
 
 .znak span{
+    display: block;
     text-align: center
-    padding-left: 475px;
+    padding-left: 500px;
     padding-bottom: 20px;
     padding-top: 30px;
-     padding-right: 125px;
+     padding-right: 100px;
     color: #3f495a;
     font-size: 16px;
     font-weight: 400;
@@ -223,7 +342,7 @@ nav{
     text-align: center
     padding-left: 475px;
     padding-bottom: 20px;
-    padding-top: 30px;
+    padding-top: 28px;
     padding-right: 90px;
     color: #cf7600;
     font-size: 20px;
@@ -231,11 +350,12 @@ nav{
 }
 
 .racketa span{
+    display: block;
     text-align: center
-    padding-left: 475px;
+    padding-left: 510px;
     padding-bottom: 20px;
     padding-top: 30px;
-    padding-right: 125px;
+    padding-right: 90px;
     color: #3f495a;
     font-size: 16px;
     font-weight: 400;
@@ -252,12 +372,17 @@ nav{
     font-weight: 500;
 }
 
+.grammofon{
+    float: right;
+}
+
 .grammofon span{
+    display: block;
     text-align: center
-    padding-left: 475px;
+    padding-left: 500px;
     padding-bottom: 20px;
     padding-top: 30px;
-    padding-right: 125px;
+    padding-right: 100px;
     color: #3f495a;
     font-size: 16px;
     font-weight: 400;
@@ -301,7 +426,8 @@ nav{
 }
 
 .client{
-    text-align: left;
+    float: left;
+    text-align: center;
 }
 
 .client b{
@@ -323,13 +449,14 @@ nav{
 }
 
 .client input{
-    width: 202px;
+    width: 270px;
     height: 45px;
     color: #fff;
     background-color: #63b5ae;
     border-radius: 8%;
     overflow: hidden;
     margin-top: 10px;
+    font-size: 18px;
 }
 
 .proect{
@@ -379,17 +506,19 @@ nav{
 }
 
 .stoimost span{
+    display: block;
     padding-bottom: 10px;
-    font-size: 15px;
+    font-size: 19px;
     color: #263244;
     font-weight: 100;
     text-align: left;
+    font-weight: 600;
 }
 
 .statistic{
     width: 100%;
-    height: 100%;
-    background-image:url("../img/фон2.jpg") center/cover;
+    height: 800px;
+    background:url("../img/фон2.jpg") center/cover;
     text-align: center;
     float: left;
     margin-top: 550px;
@@ -400,6 +529,7 @@ nav{
     color: #263244;
     font-weight: bold;
     text-align: center;
+    padding-top: 200px;
     padding-bottom: 31px;
 }
 
@@ -419,20 +549,19 @@ nav{
 
 .smail{
     float: right;
+    padding-right: 450px;
 }
 .smail p{
     text-align: center;
-    padding-bottom: 20px;
-    padding-top: 30px;
+    padding-top: 25px;
     color: #cf7600;
     font-size: 20px;
     font-weight: 500px;
 }
 
 .smail span{
+    display: block;
     text-align: center;
-    padding-bottom: 20px;
-    padding-top: 30px;
     color: #3f495a;
     font-size: 16px;
     font-weight: 400;
@@ -440,25 +569,22 @@ nav{
 
 .skobki{
     float: right;
+    padding-left: 77.5px;
+     padding-right: 77.5px;
 }
 
 .skobki p{
     text-align: center;
-    padding-left: 475px;
-    padding-bottom: 20px;
     padding-top: 30px;
-     padding-right: 90px;
     color: #cf7600;
     font-size: 20px;
     font-weight: 500;
 }
 
 .skobki span{
+    display: block;
     text-align: center;
-    padding-left: 475px;
-    padding-bottom: 20px;
-    padding-top: 30px;
-     padding-right: 125px;
+    padding-bottom: 15px;
     color: #3f495a;
     font-size: 16px;
     font-weight: 400;
@@ -466,47 +592,44 @@ nav{
 
 .galochka{
     float: right;
+    padding-left: 77.5px;
+    padding-right: 77.5px;
 }
 
 .galochka p{
     text-align: center;
-    padding-left: 475px;
-    padding-bottom: 20px;
     padding-top: 30px;
-    padding-right: 90px;
     color: #cf7600;
     font-size: 20px;
     font-weight: 500;
 }
 
 .galochka span{
+    display: block;
     text-align: center;
-    padding-left: 475px;
-    padding-bottom: 20px;
-    padding-top: 30px;
-    padding-right: 125px;
+    padding-bottom: 15px;
     color: #3f495a;
     font-size: 16px;
     font-weight: 400;
 }
 
+.cubok{
+    float: right;
+    padding-right: 77.5px;
+}
+
 .cubok p{
-    text-align: center
-    padding-left: 475px;
-    padding-bottom: 20px;
-    padding-top: 30px;
-    padding-right: 95px;
+    text-align: center;
+    padding-top: 25px;
     color: #cf7600;
     font-size: 20px;
     font-weight: 500;
 }
 
 .cubok span{
-    text-align: center
-    padding-left: 475px;
-    padding-bottom: 20px;
-    padding-top: 30px;
-    padding-right: 125px;
+    display: block;
+    text-align: center;
+    padding-bottom: 15px;
     color: #3f495a;
     font-size: 16px;
     font-weight: 400;
@@ -521,12 +644,12 @@ nav{
 }
 
 .otz{
-    width: 100%;
     text-align: center;
     color: #2c384a;
 }
 
 .otz h3{
+    padding-top: 95px;
     font-size: 44px;
     color: #263244;
     font-weight: bold;
@@ -553,20 +676,23 @@ nav{
 }
 
 .otz span{
+    display: block;
     text-align: center;
-    margin-top: 7px;
+    font-size: 16px;
+    margin-top: 10px;
     margin-bottom: 7px;
 }
 
 .otz b{
-    margin-top: 7px;
+    display: block;
+    margin-top: 19px;
     text-align: center;
 }
 
 .fon6{
     width: 100%;
-    height: 100%;
-    background-image:url("../img/Фон1.jpg") center/cover;
+    height: 1200px;
+    background:url("../img/Фон1.jpg") center/cover;
     text-align: center;
     float: left;
 }
@@ -574,12 +700,12 @@ nav{
 .contact{
     width: 100%;
     text-align: center;
-    color: #2c384a;
+    color: #ffffff;
 }
 
 .contact h3{
     font-size: 44px;
-    color: #263244;
+    color: #ffffff;
     font-weight: bold;
     text-align: center;
 }
@@ -593,6 +719,9 @@ nav{
     text-align: center;
 }
 
+.contact h6{
+    font-size: 19px;
+}
 
 .geo{
     float: right;
@@ -613,7 +742,7 @@ nav{
     margin-bottom: 48px;
     margin-top: 8px;
     margin-right: 45px;
-    color: #3f495a;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 500;
 }
@@ -638,7 +767,7 @@ nav{
     margin-bottom: 60px;
     margin-top: 8px;
     margin-right: 55px;
-    color: #3f495a;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 500;
 }
@@ -656,7 +785,7 @@ nav{
     margin-left: 55px;
     margin-bottom: 60px;
     margin-top: 8px;
-    color: #3f495a;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 500;
 }
@@ -665,7 +794,7 @@ nav{
     float: left;
     width: 100%;
     text-align: center;
-    color: #2c384a;
+    color: #ffffff;
     font-weight: 600;
     font-size: 22px;
     letter-spacing: 0.2px;
@@ -674,22 +803,27 @@ nav{
 
 .contact input{
     float: left;
-    width: 355px;
-    height: 35px;
-    border: 1px solid #000;
+    width: 350px;
+    height: 30px;
+    border: 1px solid #ffff;
     margin-left: 15px;
     margin-right: 15px;
-    margin-bottom: 7.5px;
-    outline-color: 1px solid #000;
 }
 
 .contact textarea{
-    float: left;
     width: 730px;
     height: 95px;
-    border: 1px solid #000;
-    margin-top: 7.5px;
-    outline: 1px solid #000;
+    border: 1px solid #ffffff;
+} 
+
+#otpravit{
+    width: 150px;
+    height: 35px;
+    border: 1px solid #ffff;
+    font-size: 13px;
+    background: none;
+    border-radius: 5px;
+    color: #ffff;
 }
 
 .contact a{
@@ -707,17 +841,4 @@ nav{
     margin-bottom: 40px;
     font-size: 11px;
     letter-spacing: 0px;
-}
-
-.otpravit{
-    height: 40px;
-    width: 128px;
-    text-align: center;
-    border: 2px solid #6d7682;
-    background: none;
-    border-radius: 5px;
-    color#6d7682;
-    font-size: 13px;
-    margin-left: 900px;
-    margin-top: 25px;
 }
