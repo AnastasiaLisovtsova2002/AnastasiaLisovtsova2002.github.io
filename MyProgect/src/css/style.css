@@ -113,6 +113,10 @@ nav{
     transform: scale(1.1);
 }
 
+.title__container input:active{
+    transform: scale(1.2);
+}
+
 @keyframes comming{
     from{
         opacity: 0;
@@ -168,13 +172,13 @@ nav{
     width: 100%;
     float: right;
     padding-top: 150px;
-    background-color: rgb #fcfdfd;
+    background-color: #ffffff;
 }
 
 .text{
     width: 100%;
     float: right;
-    margin: 107px 0px 30px 605px;
+    margin: 57px 0px 30px 605px;
     color: #2c384a;
     text-align: center;
 }
@@ -237,6 +241,7 @@ nav{
     text-align: center;
     margin-top: 23px;
     background-color: #fcfdfd;
+    margin-bottom: 65px;
 }
 
 .text input{
@@ -253,11 +258,16 @@ nav{
     transform: scale(1.1);
 }
 
+.text input:active{
+    transform: scale(1.2);
+}
+
 .fon1{
     width: 100%;
     height: calc(100% - 1791px);
     background:url("../img/картинка фона.jpg") center/cover;
     text-align: center;
+    float: left;
 }
 
 .vozmognosti{
@@ -295,6 +305,13 @@ nav{
     color: #cf7600;
     font-size: 20px;
     font-weight: 500px;
+   //* opacity: 0;
+    -webkit-animation: vozm 1s ease forwards;
+    -o-animation: vozm 1s ease forwards;
+    animation: vozm 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;//*/
 }
 
 .nout span{
@@ -320,6 +337,13 @@ nav{
     color: #cf7600;
     font-size: 20px;
     font-weight: 500;
+    //*opacity: 0;
+    -webkit-animation: vozm 1s ease forwards;
+    -o-animation: vozm 1s ease forwards;
+    animation: vozm 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;//*/
 }
 
 .znak span{
@@ -347,6 +371,13 @@ nav{
     color: #cf7600;
     font-size: 20px;
     font-weight: 500;
+    //*opacity: 0;
+    -webkit-animation: vozm 1s ease forwards;
+    -o-animation: vozm 1s ease forwards;
+    animation: vozm 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;//*/
 }
 
 .racketa span{
@@ -370,6 +401,14 @@ nav{
     color: #cf7600;
     font-size: 20px;
     font-weight: 500;
+    //*opacity: 0;
+    -webkit-animation: vozm 1s ease forwards;
+    -o-animation: vozm 1s ease forwards;
+    animation: vozm 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;//*/
+    
 }
 
 .grammofon{
@@ -388,13 +427,23 @@ nav{
     font-weight: 400;
 }
 
+//*@keyframes vozm{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 0px;
+    }//*/
+
 .fon2{
     width: 1175px;
     height: 950px;
     margin-left: 388px;
     background-position: center;
     height: calc(100% - 2315px);
-    background-color: rgb #fcfdfd;
+    background-color: #fcfdfd;
 }
 
 .keisy{
@@ -457,6 +506,24 @@ nav{
     overflow: hidden;
     margin-top: 10px;
     font-size: 18px;
+}
+
+.client input{
+     transition: all 0.2s;
+     transform: scale(1);
+}
+
+.client input:hover{
+    background: #344051;
+    color: white;
+}
+
+.client input:hover{
+    transform: scale(1.1);
+}
+
+.client input:active{
+    transform: scale(1.2);
 }
 
 .proect{
@@ -699,6 +766,7 @@ nav{
 
 .contact{
     width: 100%;
+    height: 500px;
     text-align: center;
     color: #ffffff;
 }
@@ -708,13 +776,14 @@ nav{
     color: #ffffff;
     font-weight: bold;
     text-align: center;
+    padding-top: 95px; 
 }
 
 .zag{
     width: 70px;
     height: 4px;
     margin-top: 31px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     box-sizing: border-box;
     text-align: center;
 }
@@ -725,69 +794,58 @@ nav{
 
 .geo{
     float: right;
+    padding-right: 600px;
 }
-
 .geo p{
     text-align: center;
-    padding-left: 705px;
-    margin-bottom: 8px;
-    margin-top: 50px;
-    margin-right: 117px;
-    font-size: 20px;
+    padding-top: 45px;
 }
 
 .geo span{
+    display: block;
     text-align: center;
-    padding-left: 650px;
-    margin-bottom: 48px;
-    margin-top: 8px;
-    margin-right: 45px;
     color: #ffffff;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
+    padding-top: 20px;
 }
 
-
 .convert{
-        float: right;
+    float: right;
+    padding-left: 100px;
+     padding-right: 90px;
 }
 
 .convert p{
     text-align: center;
-    margin-left: 117px;
-    margin-bottom: 8px;
-    margin-top: 50px;
-    margin-right: 117px;
-    font-size: 20px;
+    padding-top: 45px;
 }
 
 .convert a{
+    display: block;
     text-align: center;
-    margin-left: 45px;
-    margin-bottom: 60px;
-    margin-top: 8px;
-    margin-right: 55px;
     color: #ffffff;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.telefon{
+    float: right;
 }
 
 .telefon p{
     text-align: center;
-    margin-left: 117px;
-    margin-bottom: 8px;
-    margin-top: 50px;
-    font-size: 20px;
+    padding-top: 45px;
 }
 
 .telefon span{
+    display: block;
     text-align: center;
-    margin-left: 55px;
-    margin-bottom: 60px;
-    margin-top: 8px;
     color: #ffffff;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
+    padding-top: 20px;
 }
 
 .ost{
@@ -810,21 +868,39 @@ nav{
     margin-right: 15px;
 }
 
-.contact textarea{
-    width: 730px;
-    height: 95px;
-    border: 1px solid #ffffff;
-} 
+.contact input{
+     transition: all 0.2s;
+     transform: scale(1);
+}
 
 #otpravit{
-    width: 150px;
-    height: 35px;
+    width: 140px;
+    height: 38px;
     border: 1px solid #ffff;
     font-size: 13px;
     background: none;
     border-radius: 5px;
     color: #ffff;
 }
+
+#otpravit:hover{
+    background: white;
+    color: #344051;
+}
+
+#otpravit:hover{
+    transform: scale(1.1);
+}
+
+#otpravit:active{
+    transform: scale(1.2);
+}
+
+.contact textarea{
+    width: 730px;
+    height: 95px;
+    border: 1px solid #ffffff;
+} 
 
 .contact a{
     float: left;
