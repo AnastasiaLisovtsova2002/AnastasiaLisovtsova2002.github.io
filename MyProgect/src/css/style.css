@@ -219,12 +219,12 @@ nav{
     color: #3f495a;
     margin-top: 24px; 
     margin-bottom:  23px; 
-    padding-left: 605px;
+    padding-left: 490px;
 }
 
 .text br{
     margin-top: 24px; 
-    margin-bottom:  23px; 
+    margin-bottom:  20px; 
     padding-left: 605px;
     text-align: left;
     font-size: 18px;
@@ -239,7 +239,7 @@ nav{
     border-radius: 8%;
     overflow: hidden;
     text-align: center;
-    margin-top: 23px;
+    margin-top: 20px;
     background-color: #fcfdfd;
     margin-bottom: 65px;
 }
@@ -274,7 +274,7 @@ nav{
     width: 100%;
     float: right;
     text-align: center;
-    margin: 113px 0px 113px 419px;
+    margin: 113px 0px 113px 360px;
     color: #2c384a;
 }
 
@@ -305,13 +305,13 @@ nav{
     color: #cf7600;
     font-size: 20px;
     font-weight: 500px;
-   //* opacity: 0;
-    -webkit-animation: vozm 1s ease forwards;
-    -o-animation: vozm 1s ease forwards;
-    animation: vozm 1s ease forwards;
+    opacity: 0;
+    -webkit-animation: vozm1 1s ease forwards;
+    -o-animation: vozm1 1s ease forwards;
+    animation: vozm1 1s ease forwards;
     -webkit-animation-delay: 2.4s;
     -o-animation-delay: 2.4s;
-    animation-delay: 2.4s;//*/
+    animation-delay: 2.4s;
 }
 
 .nout span{
@@ -337,13 +337,13 @@ nav{
     color: #cf7600;
     font-size: 20px;
     font-weight: 500;
-    //*opacity: 0;
-    -webkit-animation: vozm 1s ease forwards;
-    -o-animation: vozm 1s ease forwards;
-    animation: vozm 1s ease forwards;
+    opacity: 0;
+    -webkit-animation: vozm1 1s ease forwards;
+    -o-animation: vozm1 1s ease forwards;
+    animation: vozm1 1s ease forwards;
     -webkit-animation-delay: 2.4s;
     -o-animation-delay: 2.4s;
-    animation-delay: 2.4s;//*/
+    animation-delay: 2.4s;
 }
 
 .znak span{
@@ -367,17 +367,17 @@ nav{
     padding-left: 475px;
     padding-bottom: 20px;
     padding-top: 28px;
-    padding-right: 90px;
+    padding-right: 130px;
     color: #cf7600;
     font-size: 20px;
     font-weight: 500;
-    //*opacity: 0;
+    opacity: 0;
     -webkit-animation: vozm 1s ease forwards;
     -o-animation: vozm 1s ease forwards;
     animation: vozm 1s ease forwards;
     -webkit-animation-delay: 2.4s;
     -o-animation-delay: 2.4s;
-    animation-delay: 2.4s;//*/
+    animation-delay: 2.4s;
 }
 
 .racketa span{
@@ -386,7 +386,7 @@ nav{
     padding-left: 510px;
     padding-bottom: 20px;
     padding-top: 30px;
-    padding-right: 90px;
+    padding-right: 130px;
     color: #3f495a;
     font-size: 16px;
     font-weight: 400;
@@ -401,14 +401,13 @@ nav{
     color: #cf7600;
     font-size: 20px;
     font-weight: 500;
-    //*opacity: 0;
+    opacity: 0;
     -webkit-animation: vozm 1s ease forwards;
     -o-animation: vozm 1s ease forwards;
     animation: vozm 1s ease forwards;
     -webkit-animation-delay: 2.4s;
     -o-animation-delay: 2.4s;
-    animation-delay: 2.4s;//*/
-    
+    animation-delay: 2.4s;
 }
 
 .grammofon{
@@ -418,7 +417,7 @@ nav{
 .grammofon span{
     display: block;
     text-align: center
-    padding-left: 500px;
+    padding-left: 400px;
     padding-bottom: 20px;
     padding-top: 30px;
     padding-right: 100px;
@@ -427,7 +426,7 @@ nav{
     font-weight: 400;
 }
 
-//*@keyframes vozm{
+@keyframes vozm{
     from{
         opacity: 0;
         margin-left: -500px;
@@ -435,8 +434,20 @@ nav{
     to{
         opacity: 1;
         margin-left: 0px;
-    }//*/
+    }
+}
 
+@keyframes vozm1{
+    from{
+        opacity: 0;
+        margin-right: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-right: 0px;
+    }
+}
+        
 .fon2{
     width: 1175px;
     height: 950px;
@@ -470,13 +481,14 @@ nav{
     padding-bottom: 36px;
 }
 .keisy img{
+    text-align: center;
     margin-top: 20px;
     margin-bottom: 15px;
 }
 
 .client{
+    display: block;
     float: left;
-    text-align: center;
 }
 
 .client b{
@@ -494,7 +506,7 @@ nav{
     color: #263244;
     font-family: sans-serif;
     font-weight: 300;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .client input{
@@ -616,7 +628,7 @@ nav{
 
 .smail{
     float: right;
-    padding-right: 450px;
+    padding-right: 445px;
 }
 .smail p{
     text-align: center;
@@ -624,6 +636,13 @@ nav{
     color: #cf7600;
     font-size: 20px;
     font-weight: 500px;
+    opacity: 0;
+    -webkit-animation: vozm1 1s ease forwards;
+    -o-animation: vozm1 1s ease forwards;
+    animation: vozm1 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
 }
 
 .smail span{
@@ -646,6 +665,13 @@ nav{
     color: #cf7600;
     font-size: 20px;
     font-weight: 500;
+    opacity: 0;
+    -webkit-animation: vozm1 1s ease forwards;
+    -o-animation: vozm1 1s ease forwards;
+    animation: vozm1 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
 }
 
 .skobki span{
@@ -669,6 +695,13 @@ nav{
     color: #cf7600;
     font-size: 20px;
     font-weight: 500;
+    opacity: 0;
+    -webkit-animation: vozm 1s ease forwards;
+    -o-animation: vozm 1s ease forwards;
+    animation: vozm 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
 }
 
 .galochka span{
@@ -691,6 +724,13 @@ nav{
     color: #cf7600;
     font-size: 20px;
     font-weight: 500;
+    opacity: 0;
+    -webkit-animation: vozm 1s ease forwards;
+    -o-animation: vozm 1s ease forwards;
+    animation: vozm 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
 }
 
 .cubok span{
@@ -788,13 +828,13 @@ nav{
     text-align: center;
 }
 
-.contact h6{
-    font-size: 19px;
+.contact h5{
+    font-size: 14px;
 }
 
 .geo{
     float: right;
-    padding-right: 600px;
+    padding-right: 580px;
 }
 .geo p{
     text-align: center;
@@ -812,7 +852,7 @@ nav{
 
 .convert{
     float: right;
-    padding-left: 100px;
+    padding-left: 105px;
      padding-right: 90px;
 }
 
