@@ -11,34 +11,58 @@
     
     <title>Анастасия Лисовцова - Веб-разработчик</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
 </head>
 
 <body>
 
 <header>
     <nav>
-        <div class="logo">Настя Лис</div>
-        <div class="menu">
+       <div class="container">
+         <div class="row"> 
+             <div class="col-xxl-2 col-lg-3 col-7"><div class="logo">Настя Лис</div></div>
+           <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block"><div class="menu">
            <ul>
-            <li>ОБО МНЕ</li>
-            <li>УСЛУГИ</li>
-            <li>КЕЙСЫ</li>
-            <li>ПРАЙС</li>
-            <li>ОТЗЫВЫ</li>
-            <li>КОНТАКТЫ</li>
-        </ul></div>
+            <li><a href="#">ОБО МНЕ</a></li>
+            <li><a href="#">УСЛУГИ</a></li>
+            <li><a href="#">КЕЙСЫ</a></li>
+            <li><a href="#">ПРАЙС</a></li>
+            <li><a href="#">ОТЗЫВЫ</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+        </ul>
+        </div></div>
+        <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+        <div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Навигация
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="#">Обо мне</a></li>
+    <li><a class="dropdown-item" href="#">Услуги</a></li>
+    <li><a class="dropdown-item" href="#">Кейсы</a></li>
+    <li><a class="dropdown-item" href="#">Прайс</a></li>
+    <li><a class="dropdown-item" href="#">Отзывы</a></li>
+    <li><a class="dropdown-item" href="#">Контакты</a></li>
+  </ul>
+</div></div>
+        </div>
+        </div>
     </nav>
  </header>   
-       
- <div class="main"><div class="title__container">
+ <section class="main">
+   <div class="container h-100"><div class="row align-items-center h-100"><div class="col-lg-6 mt-5 pt-5">
+    <div class="title__container mt-5">
      <h1>Привет <br> Я Настя Лис</h1>
      <h4>Фулл стек веб-разработчик</h4>
-     <input type="submit" value="Обо мне">
-     <input type="submit" value="Мои работы">
+     <input type="button" value="Обо мне">
+     <input type="button" value="Мои работы">
  </div>
- </div>
- <div class="fon"><div class="text">
+ </div></div></div>
+ </section>  
+ <section class="fon"><div class="text">
             <h3>ОБО МНЕ</h3>
             <p><img class="zag" src="img/черта заголовка.png"></p>
             <p><img src="img/фотка парня.jpg"></p>
@@ -46,55 +70,59 @@
             <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi autem totam recusandae nulla quo error voluptate officia, <br>ipsa nisi doloribus, laborum itaque sint rem deleniti! Et consequatur perspiciatis placeat, labore tempore.</span></p>
             <input type="submit" value="Скачать резюме">
  </div>
- </div>
+ 
  <div class="fon1"><div class="vozmognosti">
             <h3><b>ЧТО Я УМЕЮ</b></h3>
             <p><img class="zag" src="img/черта заголовка.png"></p>
-            <p><img class="nout" src="img/ноут.png"></p>
-            <div class="menu_item">Веб-дизайн</div>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum tenetur harum, earum.</span>
-            <p><img class="znak" src="img/знак.png"></p>
-            <div class="menu_item">Разработка</div>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum tenetur harum, earum.</span>
-            <p><img class="racketa" src="img/ракета.png"></p>
-            <div class="menu_item">СЕО-Оптимизация</div>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum tenetur harum, earum.</span>
-            <p><img class="grammofon" src="img/граммофон.png"></p>
-            <div class="menu_item">Маркетинг</div>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum tenetur harum, earum.</span>
- </div>
- </div>
- <div class="fon2"><div class="keisy">
-            <h3><b>КЕЙСЫ</b></h3>
-            <p><img class="snimok_ekrana" src="img/%D1%84%D0%BE%D1%82%D0%BA%D0%B0%20(2).jpg"></p>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed praesentium aliquam facere aliquid unde optio cum iste!</span>
-            <p><img class="zag" src="img/черта заголовка.png"></p>
-     <div><span><h3><b>CLIENT:</b></h3></span></div>
-     <div><p><span><h6>Какой-то сайт</h6></span></p></div>
-     <div><span><h3><b>WEBSITE:</b></h3></span></div>
-     <div><a href="http://www.somedornain.com" target="_blank"></a></div>
-     <input type="submit" value="VISITE LIVE SITE"
-            <div><span><h3><b>Название проекта</b></h3></span></div>
-     <div><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est iusto aspernatur dolorum voluptatem laudantium architecto numquam iste, nisi at! <br>Sunt, possimus velit sint odio voluptates quidem nobis, repudiandae autem necessitatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Est iusto aspernatur dolorum voluptatem laudantium architecto numquam iste, nisi at! Sunt, possimus velit sint odio voluptates quidem nobis, repudiandae autem necessitatibus!</span>   
+            <div class="nout skill_item"><p><img src="img/ноут.png"></p>
+            <p>Веб-дизайн</p>
+            <span>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. <br>Ipsum tenetur harum, earum.</span>
      </div>
+            <div class="znak skill_item"><p><img src="img/знак.png"></p>
+            <p>Разработка</p>
+            <span>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. <br>Ipsum tenetur harum, earum.</span>
+     </div>
+            <div class="racketa skill_item"><p><img src="img/ракета.png"></p>
+            <p>СЕО-Оптимизация</p>
+            <span>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. <br>Ipsum tenetur harum, earum.</span>
+     </div>
+            <div  class="grammofon skill_item"><p><img src="img/граммофон.png"></p>
+            <p>Маркетинг</p>
+            <span>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. <br>Ipsum tenetur harum, earum.</span>
+    </div>
      </div></div>
- <div class="fon3"><div class="stoimost">
-            <h3><b>Расчёт стоимости</b></h3>
-     <div>
+ </section>
+ <section class="fon2"><div class="keisy">
+            <h3><b>КЕЙСЫ</b></h3>
+            <p><img src="img/черта заголовка.png"></p>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed praesentium aliquam facere aliquid unde optio cum iste!</span>
+            <img src="img/%D1%84%D0%BE%D1%82%D0%BA%D0%B0%20(2).jpg">
+     <div class="client"><span><h3><b>CLIENT:</b></h3></span>
+     <p><span><h6>Какая-то компания</h6></span></p>
+     <span><h3><b>WEBSITE:</b></h3></span>
+     <a href="http://www.somedornain.com" target="_blank">http://somedormain.com</a>
+         <p><input type="submit" value="VISITE LIVE SITE"></p>
+           </div>
+    <div class="proect"><span><h3><b>Название проекта</b></h3></span>
+     <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est iusto aspernatur dolorum voluptatem laudantium architecto numquam iste, nisi at! <br>Sunt, possimus velit sint odio voluptates quidem nobis, repudiandae autem necessitatibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Est iusto aspernatur dolorum voluptatem laudantium architecto numquam iste, nisi at! Sunt, possimus velit sint odio voluptates quidem nobis, repudiandae autem necessitatibus!</span>   
+     </div>
+     </div></section>
+ <section class="stoimost">
+     <h4><b>Расчёт стоимости</b></h4>
        <form action="&">
-       <span><h3><b>Тип сайта</b></h3></span>
+       <span><h3>Тип сайта</h3></span>
         <select name="list1" id="list" placeholder="Выберите пункт...">
         <option value="Opt1">Сайт-визитка</option value>
         <option value="Opt2">Корпоративный сайт</option value>
         <option value="Opt3">Интернет-магазин</option value>
         </select>
-        <span><h3><b>Дизайн</b></h3></span>
+        <span><h3>Дизайн</h3></span>
         <select name="list2" id="list" placeholder="Выберите пункт...">
         <option value="Opt7">Плоский дизайн</option value>
         <option value="Opt8">Минимализм</option value>
         <option value="Opt9">Корпоративный стиль</option value>
         </select>
-        <span><h3><b>Адаптивность</b></h3></span>
+        <span><h3>Адаптивность</h3></span>
         <select name="list3" id="list" placeholder="Выберите пункт...">
         <option value="Opt11">Смартфоны, планшеты</option value>
         <option value="Opt12">Ноутбуки</option value>
@@ -103,48 +131,48 @@
         </select>
         <input type="reset" value="Расчитать">
          </form>
-         <span>Сроки <b>0</b></span>
-         <p><span>Стоимость <b>0</b></span></p>
-     </div>
- </div></div>
- <div class="fon4"><div class="statistic">
+         <span>Сроки 0</span>
+         <p><span>Стоимость 0</span></p>
+     </section>
+ <section class="statistic">
             <h3><b>НЕМНОГО СТАТИСТИКИ</b></h3>
             <p><img class="zag" src="img/черта заголовка.png"></p>
-            <p><img class="smail" src="img/смайл.png"></p>
-     <div><span><h3><b>120</b></h3><br>СЧАСТЛИВЫХ КЛИЕНТОВ</span></div>
-     <p><img class="skobki" src="img/скобки.png"></p>
-     <div><span><h3><b>4,600</b></h3><br>ЧАСОВ РАБОТЫ</span></div>
-     <p><img class="galochka" src="img/галочка.png"></p>
-     <div><span><h3><b>340</b></h3><br>ПРОЕКТОВ ЗАВЕРШЕНО</span></div>
-     <p><img class="cubok" src="img/кубок.png"></p>
-     <div><span><h3><b>23</b></h3><br>НАГРАД ПОЛУЧЕНО</span></div>
- </div></div>
- <div class="fon5"><div class="otz">
-            <h3><b>ОТЗЫВЫ</b></h3>
+            <div class="smail"><p><img src="img/смайл.png"></p>
+     <span><b>120</b><br>СЧАСТЛИВЫХ КЛИЕНТОВ</span></div>
+    <div class="skobki"><p><img src="img/скобки.png"></p>
+     <span><b>4,600</b><br>ЧАСОВ РАБОТЫ</span></div>
+    <div class="galochka"><p><img src="img/галочка.png"></p>
+     <span><b>340</b><br>ПРОЕКТОВ ЗАВЕРШЕНО</span></div>
+     <div class="cubok"><p><img src="img/кубок.png"></p>
+     <span><b>23</b><br>НАГРАД ПОЛУЧЕНО</span></div>
+    </section>
+ <section class="fon5"><div class="otz">
+            <h3>ОТЗЫВЫ</h3>
             <p><img class="zag" src="img/черта заголовка.png"></p>
             <p><img class="paren" src="img/фотка.png"></p>
             <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab illo nostrum assumenda corporis consequatur reiciendis neque veritatis expedita numquam, <br>alias nam exercitationem explicabo dignissimos necessitatibus aut sequi mollitia harum laudantium consectetur.</span>
-     <p><span>Михаил, Ген.директор ПАО "Газпром"</span></p>
- </div></div>
-     <div class="fon6"><div class="contact">
+     <p><span><b>Михаил, Ген.директор ПАО "Газпром"</b></span></p>
+ </div></section>
+     <section class="fon6"><div class="contact">
             <h3><b>МОИ КОНТАКТЫ</b></h3>
-            <p><img class="zag" src="img/черта заголовка.png"></p>
-         <span><h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab illo nostrum assumenda corporis consequatur reiciendis</h6></span>
-         <p><img class="geo" src="img/гео.png"></p>
-         <p><span>Санкт-Петербург <br>Невский проспект 11</span></p>
-         <p><img class="convert" src="img/конверт.png"></p>
-         <a href="https://info@companyname.com" target="_blank">info@companyname.com</a>
-         <p><img class="telefon" src="img/труба.png"></p>
-         <p><span>+7 999 999-99-99</span></p>
-         <div><h4>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h4></div>
+            <p><img class="zag" src="img/Черта заголовка.png"></p>
+         <span><h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab illo nostrum assumenda corporis consequatur reiciendis</h5></span>
+        <div class="geo"><p><img src="img/гео.png"></p>
+         <span>Санкт-Петербург <br>Невский проспект 11</span></div>
+         <div class="convert"><p><img class="convert" src="img/конверт.png"></p>
+         <a href="https://info@companyname.com" target="_blank">info@companyname.com</a></div>
+         <div class="telefon"><p><img class="telefon" src="img/труба.png"></p>
+         <span>+7 999 999-99-99</span></div>
+         <div class="ost"><h4>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h4>
           <form action="&">
           <input type="text" name="text_input" placeholder="Имя">
-          <input type="text" name="text_input1" placeholder="Email">
-           <textarea name="name1" id="1" cols="95" rows="10" placeholder="Сообщение"></textarea>
-        <input type="reset" value="Отправить">
-         </form>
+          <input type="email" name="text_input1" placeholder="Email">
+           <br><p><textarea name="name1" id="1" cols="95" rows="10" placeholder="Сообщение"></textarea></p>
+              <p><input id="otpravit" type="reset" value="Отправить"></p>
+         </form></div>
      <a href="https://www.google.cat/maps/" target="_blank">Карта</a>
      <span><h6>Copyright2021 Настя Лис Design by Web</h6></span>
- </div></div>
+ </div></section>
+ <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
